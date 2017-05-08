@@ -1,20 +1,20 @@
-wallet_users
+db_schema
+
+1.wallet_users
 -------
 mobile
 name
 email
 password
 
-balance
+2.balance
 -----
 mobile
 balance
 
-trans-history
+3.trans-history
 -------------
 create table wallet_history(id number(5) not null, mobile number(10) not null, trans_date varchar2(25), details varchar2(50), amount number(6));
-
-
 
 SQL> create SEQUENCE seq_wallet
   2  minvalue 100
